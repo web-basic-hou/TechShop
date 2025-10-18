@@ -10,8 +10,8 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
 }
 
 @media (min-width: 640px) { .container { max-width: 640px; } }
@@ -56,10 +56,14 @@ body {
 }
 
 .main-nav {
-    display: none;
+    /* display: none; */
     gap: 2rem; /* space-x-8 */
 }
-@media (min-width: 768px) { .main-nav { display: flex; } }
+@media (min-width: 768px) { 
+    .main-nav { 
+        display: flex; 
+    } 
+}
 
 
 .main-nav a {
@@ -150,73 +154,6 @@ body {
     background-color: #1d4ed8;
 }
 
-
-/* Promotion Section */
-.promo-section {
-    padding: 3rem 0;
-    background-color: #f8fafc; /* slate-50 */
-}
-
-.promo-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1.5rem;
-}
-@media (min-width: 768px) { .promo-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1024px) { .promo-grid { grid-template-columns: repeat(3, 1fr); } }
-
-
-.promo-banner {
-    position: relative;
-    border-radius: 0.75rem; /* rounded-xl */
-    overflow: hidden;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -2px rgba(0,0,0,.1); /* shadow-lg */
-}
-
-.promo-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 300ms;
-}
-
-.promo-banner:hover .promo-img {
-    transform: scale(1.05);
-}
-
-.promo-content {
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 1.5rem;
-}
-
-.promo-title {
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: #ffffff;
-}
-
-.promo-text {
-    color: #ffffff;
-    margin-bottom: 1rem;
-}
-
-.promo-link {
-    color: #ffffff;
-    font-weight: 600;
-    border-bottom: 2px solid transparent;
-    width: fit-content;
-    text-decoration: none;
-    transition: all 150ms;
-}
-
-.promo-link:hover {
-    border-bottom-color: #ffffff;
-}
 
 /* Featured Products Section */
 .featured-products {
@@ -334,7 +271,7 @@ body {
 }
 
 .feature-card p {
-  color: #475569;
+  color: #475569;   
   font-size: 0.95rem;
 }
 
